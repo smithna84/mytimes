@@ -1,0 +1,18 @@
+#header{
+  display: flex;
+  position: fixed;
+  font-family: Verdano;
+  font-size: 14px:
+  font-weight: bold;
+}
+
+#header a{
+  display: inline-block span;
+  positio
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+#header h1{
+  color: MediumAquamarine;
+}
