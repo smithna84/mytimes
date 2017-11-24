@@ -1,18 +1,37 @@
-#header{
+.header{
   display: flex;
+  align-items: center;
   position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
   font-family: Verdano;
   font-size: 14px:
   font-weight: bold;
+  border-bottom: 1px solid black;
+  background-color: white;
 }
 
-#header a{
-  display: inline-block span;
-  positio
-  flex-direction: row;
-  align-items: flex-end;
+.logo{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+.header nav{
+  padding-right: 40px;
+  position: relative;
 }
 
-#header h1{
+.logo span{
   color: MediumAquamarine;
+}
+
+nav span{
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+span a{
+  color: black;
 }
