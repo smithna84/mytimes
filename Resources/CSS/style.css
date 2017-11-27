@@ -35,3 +35,47 @@ nav span{
 span a{
   color: black;
 }
+
+.content{
+  display: flex;
+  flex-direction:row;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.large{
+  width: 630px;
+}
+
+.image-contnet span{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+}
+
+.column.medium{
+  width: 300px;
+}
+
+.column.small{
+  width: 240px;
+}
+
+div{
+  border: 1px solid black;
+}
+
+.story{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
