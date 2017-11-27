@@ -51,19 +51,49 @@ span a{
 }
 
 .column.large{
+  display: flex;
   width: 630px;
 }
 
-.image-contnet span{
+.column.large.stories{
+  display: inline-block;
+  align-items: center;
+}
+
+.image-content{
   font-family: Georgia;
   font-weight: bold;
   font-size: 40px;
   color: white;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
 }
+.fall-cancelled{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image:url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+}
+
+.pop-culture{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
+}
 
 .column.medium{
+  display: inline-flex;
   width: 300px;
+}
+
+.cat-ceo.image-content{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
 }
 
 .column.small{
