@@ -1,6 +1,17 @@
+body{
+  margin: 0;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
 header{
   display: flex;
   flex-direction: row;
+  position: fixed;
+  z-index: 1;
+  height: 80px;
+  width: 100%;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -8,6 +19,10 @@ header{
 }
 
 .logo{
+  display: flex;
+  flex-grow: 1;
+  padding-left: 30px;
+  align-items: center;
   color: mediumaquamarine;
   border: 1px solid green;
 }
@@ -15,33 +30,48 @@ header{
 header nav{
   display: inline-block;
   align: right;
-  color: black;
+  color: inherit;
 }
 
 .content{
   display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
   border: 1px solid black;
 }
 
-.column.large{
+.column{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  margin-right; 32px;
+}
+.column.large{
   width: 630px;
   border: 1px solid yellow;
 }
 
-.lead.story{
+.lead.story .image-content{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
   border: 1px solid aqua;
 }
 
 .image-content{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
   font-family: Georgia;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+  text-align: center;
+
   border: 1px solid pink;
 }
 
@@ -49,29 +79,17 @@ header nav{
   border: 1px solid orange;
 }
 
-.fall-cancelled{
-  display: flex;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
+.fall-cancelled .image-content{
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png)
   border: 1px solid maroon;
 }
 
-.pop-culture{
-  display: flex;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
+.pop-culture.image-content{
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png)
   border: 1px solid lime;
 }
 
 .column.medium{
-  display: flex;
-  flex-direction:column;
   width: 300px;
   border: 1px solid red;
 }
@@ -87,28 +105,26 @@ header nav{
 }
 
 .column.small{
-  display: flex;
-  flex-direction:column;
   width: 240px;
   border: 1px solid red;
 }
 
 .story{
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
-  align-items:flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   border: 1px solid brown;
 }
 
 .stories{
   display:flex;
-  flex-direction: row;
-  align-content: center;
+  justify-content: space-between;
+  margin-top: 17px;
   border: 1px solid red;
 }
 
 .narrative{
+  margin-top: 16px;
   border: 1px solid red;
 }
 
@@ -116,6 +132,7 @@ header nav{
   display:flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-grow: 1
   font-size: 16px;
   font-weight: bold;
