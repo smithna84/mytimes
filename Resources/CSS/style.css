@@ -60,6 +60,10 @@ header nav{
   border: 1px solid aqua;
 }
 
+.lead.story{
+  width: 630px;
+}
+
 .image-content{
   display: flex;
   flex-direction: column;
@@ -128,6 +132,10 @@ header nav{
   border: 1px solid red;
 }
 
+p{
+  display: block;
+}
+
 .news-bites{
   display:flex;
   flex-direction: column;
@@ -139,7 +147,7 @@ header nav{
   border: 1px solid red;
 }
 
-.news-bites span{
+.bite{
   align-content: center;
   background-color: WhiteSmoke;
   font-family: Verdana;
