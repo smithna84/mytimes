@@ -7,11 +7,12 @@ body{
 
 header{
   display: flex;
-  flex-direction: row;
+  justify-content:space-between;
   position: fixed;
-  z-index: 10;
+  z-index: 1;
   height: 80px;
   width: 100%;
+  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -23,15 +24,28 @@ header{
   flex-grow: 1;
   padding-left: 30px;
   align-items: center;
+}
+
+.logo span{
   color: mediumaquamarine;
+  margin-left: 10px;
+}
+
+header nav {
+	display: block;
+	padding-right: 40px;
+}
+
+nav a{
+  text-decoration: underline;
+  color: black;
 }
 
 .content{
   display: flex;
-  position:r relative;
-  z-index: 1;
+  justify-content: center;
   width: 1232px;
-  margin: 0 auto 78px auto;
+	margin: 0 auto 78px auto;
   padding-top: 116px;
 }
 
@@ -46,39 +60,45 @@ header{
 }
 
 .lead.story .image-content{
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+  background-image: url(../images/img-story-main.png);
   width: 630px;
   margin-top: 0;
   font-size: 40px;
   text-align: left;
 }
 
+.image-content span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
 .lead.story{
   width: 630px;
 }
 
-.image-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 300px;
-  margin-top: 15px;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  text-align: center;
+.image-content {
+	display: block;
+	flex-direction: column;
+	height: 300px;
+	justify-content: center;
+	margin-top: 15px;
 }
 
 .text-content{
 }
 
-.fall-cancelled .image-content{
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png)
+.fall-cancelled.image-content{
+  background-image: url(../Images/img-story-2.png)
 }
 
 .pop-culture.image-content{
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png)
+  background-image: url(../Images/img-story-3.png)
 }
 
 .column.medium{
@@ -92,7 +112,7 @@ header{
   font-weight: bold;
   font-size: 30px;
   color: white;
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png)
+  background-image: url(../images/img-story-1.png)
 }
 
 .column.small{
@@ -167,7 +187,12 @@ footer nav{
   padding-left: 25px;
 }
 
+nav{
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
 nav span{
-  display: inline-block;
-  padding:20px 10px;
+  padding: 20px 10px;
 }
